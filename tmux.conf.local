@@ -1,0 +1,8 @@
+# Change prefix to C-j
+unbind C-a
+unbind C-b
+unbind C-j
+set -g prefix C-j
+
+# Faster pageup for stacktraces and whatnot
+bind ^U copy-mode -u
