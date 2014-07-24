@@ -1,0 +1,41 @@
+" Toggle paste mode, then tell us its current setting
+" Disabled - use 'yo' or 'yO'
+" map <F1> :set invpaste<CR>:set paste?<CR>
+
+" Go from insert back to normal with 'jk'
+imap jk <Esc>
+
+" Quick editing of common dotfiles
+map <Leader>VV :tabedit $MYVIMRC<CR>
+map <Leader>VB :tabedit ~/.vimrc.bundles<CR>
+
+" The superior colorscheme
+colorscheme molokai
+
+" Even quicker window movement
+nmap H <c-w>h
+nmap J <c-w>j
+nmap K <c-w>k
+nmap L <c-w>l
+
+" Use Q for formatting paragraphs
+vmap Q gq
+nmap Q gqap
+
+" Speed up keymaps
+set timeoutlen=500
+set ttimeoutlen=10
+
+" Use 'gp' to select the just-pasted block in visual line mode
+nnoremap gp V`]
+
+" Toggle cursorcolumn - Disabled, use 'cou'
+" map <Leader>C :set invcursorcolumn<CR>
+
+" Quick macro to strip trailing whitespace
+nnoremap @w :%s/\v\s+$//g<cr>
+
+augroup vimrcLocalEx
+  " Source vimrc after writing it (or .local version)
+  autocmd! BufWritePost .vimrc,.vimrc.local,vimrc,vimrc.local source $MYVIMRC
+augroup END
