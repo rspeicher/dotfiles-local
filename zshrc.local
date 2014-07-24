@@ -1,0 +1,25 @@
+unsetopt menu_complete   # do not autoselect the first completion entry
+unsetopt flowcontrol
+
+setopt always_to_end
+setopt auto_menu
+setopt complete_in_word
+setopt listpacked
+setopt noautomenu       #  don't cycle completions
+setopt nobeep           #  STFU
+setopt nocorrect
+setopt nullglob
+setopt pushdignoredups  #  don't duplicate completions
+setopt recexact         #  recognise exact, ambiguous matches
+
+# Case-insensitive and fuzzy-like matching for completion
+# 'lic<TAB>' completes LICENSE; 'bundle<TAB>' completes 'vimrc.bundles'
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' list-colors ''
+
+# vi mode
+bindkey jk vi-cmd-mode
+
+# Host-specific local configs (e.g., ~/.zshrc.laptop.local)
+set -- ~/.zshrc.*.local
+[ "$#" -gt 0 ] && source "$@"
