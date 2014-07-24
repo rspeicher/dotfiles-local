@@ -1,0 +1,30 @@
+# Unix
+#   find . -type f WRF echo $file; done
+alias -g WRF="|while read file; do"
+
+# git
+alias gb='git branch'
+alias gc='git commit -v'
+alias gca='gc --amend'
+alias gd='git diff'
+alias gi='git add -i'
+alias gp='git push'
+alias gs='git status'
+
+# Bundler
+alias be="bundle exec"
+
+# tmux
+alias t="tmux"
+alias ta="tmux attach"
+alias tls="tmux list-sessions"
+
+# servers
+alias glutt='ssh tsigo@gluttony'
+alias tsigo='ssh tsigo@tsigo.com'
+
+# Convenience
+alias mm="musicmover"
+alias mp3fix="mp3check -rBe --cut-junk-start --cut-junk-end"
+alias psname="ps aux | grep -i"
+alias youtube-mp3="youtube-dl -t --no-mtime --extract-audio --audio-format mp3 --audio-quality 192"
