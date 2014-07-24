@@ -1,0 +1,19 @@
+[alias]
+  dc = diff --cached
+  l = log --pretty=colored
+  lg = log --graph --pretty=colored --abbrev-commit --date=relative
+  rc = rebase --continue
+  sub = submodule
+
+  j = stash
+  jl = stash list
+  jp = stash pop
+  jv = stash save
+  js = !sh -c 'git stash show -v stash@{$1}' -
+  ja = !sh -c 'git stash apply stash@{$1}' -
+  jd = !sh -c 'git stash drop stash@{$1} && git stash list' -
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[user]
+  name = Robert Speicher
+  email = rspeicher@gmail.com
