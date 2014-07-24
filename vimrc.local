@@ -5,6 +5,9 @@
 " Go from insert back to normal with 'jk'
 imap jk <Esc>
 
+" Inserts the path of the currently edited file into a command
+cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
+
 " Quick editing of common dotfiles
 map <Leader>VV :tabedit $MYVIMRC<CR>
 map <Leader>VB :tabedit ~/.vimrc.bundles<CR>
