@@ -1,4 +1,5 @@
 [alias]
+  ai = add -i
   dc = diff --cached
   l = log --pretty=colored
   lg = log --graph --pretty=colored --abbrev-commit --date=relative
