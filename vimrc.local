@@ -1,7 +1,3 @@
-" Toggle paste mode, then tell us its current setting
-" Disabled - use 'yo' or 'yO'
-" map <F1> :set invpaste<CR>:set paste?<CR>
-
 " Go from insert back to normal with 'jk'
 imap jk <Esc>
 
@@ -31,9 +27,6 @@ set ttimeoutlen=10
 
 " Use 'gp' to select the just-pasted block in visual line mode
 nnoremap gp V`]
-
-" Toggle cursorcolumn - Disabled, use 'cou'
-" map <Leader>C :set invcursorcolumn<CR>
 
 " Quick macro to strip trailing whitespace
 nnoremap @w :%s/\v\s+$//g<cr>
