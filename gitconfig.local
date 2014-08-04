@@ -2,7 +2,7 @@
   ai = add -i
   dc = diff --cached
   l = log --pretty=colored
-  lg = log --graph --pretty=colored --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   rc = rebase --continue
   sub = submodule
 
