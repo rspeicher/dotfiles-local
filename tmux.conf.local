@@ -4,5 +4,8 @@ unbind C-b
 unbind C-j
 set -g prefix C-j
 
+# Derr, what time is it?
+unbind-key t
+
 # Faster pageup for stacktraces and whatnot
 bind ^U copy-mode -u
