@@ -17,7 +17,6 @@ install mplayer
 install mysql
 install node
 install postgresql
-install python
 install rbenv-ctags
 install rbenv-default-gems
 install rbenv-gemset
