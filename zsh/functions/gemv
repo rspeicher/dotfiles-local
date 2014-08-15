@@ -1,0 +1,3 @@
+gemv() {
+  gem query -ra -n "^$@\$"
+}
