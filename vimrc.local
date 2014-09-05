@@ -1,3 +1,6 @@
+" Don't lose buffer history on switch (i.e., <c-^>)
+set hidden
+
 " Go from insert back to normal with 'jk'
 imap jk <Esc>
 
