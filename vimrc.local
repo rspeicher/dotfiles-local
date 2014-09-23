@@ -9,7 +9,9 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 " Quick editing of common dotfiles
 map <Leader>VV :tabedit $MYVIMRC<CR>
+map <Leader>Vv :tabedit ~/.vimrc.local<CR>
 map <Leader>VB :tabedit ~/.vimrc.bundles<CR>
+map <Leader>Vb :tabedit ~/.vimrc.bundles.local<CR>
 
 " The superior colorscheme
 colorscheme molokai
