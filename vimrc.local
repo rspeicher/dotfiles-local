@@ -36,6 +36,10 @@ nnoremap gp V`]
 " Quick macro to strip trailing whitespace
 nnoremap @w :%s/\v\s+$//g<cr>
 
+" On my system, speeds up initial load of Ruby files
+" See https://github.com/vim-ruby/vim-ruby/issues/33
+let g:ruby_path=$PATH
+
 augroup vimrcLocalEx
   " Source vimrc after writing it (or .local version)
   autocmd! BufWritePost .vimrc,.vimrc.local,vimrc,vimrc.local source $MYVIMRC
