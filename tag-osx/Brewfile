@@ -1,9 +1,9 @@
 tap thoughtbot/formulae
 
 install ctags-exuberant
+install gh
 install git
 install git-extras
-install hub
 install id3v2
 install imagemagick
 install irssi
