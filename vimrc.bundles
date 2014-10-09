@@ -33,10 +33,10 @@ Plugin 'vim-scripts/matchit.zip'
 " rspeicher
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'AndrewRadev/switch.vim'
-Plugin 'Tabular'
 Plugin 'bling/vim-airline'
 "Plugin 'jc00ke/vim-tomdoc'
 "Plugin 'jnwhiteh/vim-golang'
+Plugin 'junegunn/vim-easy-align'
 Plugin 'kana/vim-textobj-user'
 "Plugin 'nelstrom/vim-textobj-rubyblock'
 "Plugin 'nginx.vim'
@@ -54,6 +54,10 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-repeat'
 "Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-unimpaired'
+
+" junegunn/vim-easy-align
+    vmap <Enter> <Plug>(EasyAlign)
+    nmap <Leader>a <Plug>(EasyAlign)
 
 " kien/ctrlp.vim
     " let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
@@ -88,19 +92,6 @@ Plugin 'tpope/vim-unimpaired'
 
 " AndrewRadev/switch.vim
     nnoremap - :Switch<cr>
-
-" Tabular
-    map <Leader>a= :Tabularize /=<CR>
-    map <Leader>a> :Tabularize /=><CR>
-    map <Leader>a: :Tabularize properties<CR>
-    map <Leader>at :Tabularize table<CR>
-    map <Leader>a# :Tabularize rdoc<CR>
-
-    vmap <Leader>a= :Tabularize /=<CR>gv
-    vmap <Leader>a> :Tabularize /=><CR>gv
-    vmap <Leader>a: :Tabularize properties<CR>gv
-    vmap <Leader>at :Tabularize table<CR>gv
-    vmap <Leader>a# :Tabularize rdoc<CR>gv
 
 " tpope/vim-commentary
     nmap <Leader>cc gcc
