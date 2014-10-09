@@ -2,15 +2,10 @@
 no-input-default-bindings
 
 # Show the OSD for longer
-osd-duration=2500
+osd-duration=2000
 
 # Start muted
 mute
-
-# Use CoreAudio and CoreVideo (OS X)
-# vo=opengl-hq
-vo=corevideo
-ao=coreaudio
 
 # Start centered
 geometry=50%:50%
