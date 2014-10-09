@@ -15,8 +15,7 @@ apps = [
   'Mission Control',
   'Photo Booth',
   'Stickies',
-  'TextEdit',
-  'iBooks'
+  'TextEdit'
 ]
 
 apps.each do |app|
