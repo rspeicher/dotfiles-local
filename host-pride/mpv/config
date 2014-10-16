@@ -5,6 +5,7 @@ no-input-default-bindings
 osd-duration=2000
 
 # Start muted
+volume=50
 mute
 
 # Start centered
