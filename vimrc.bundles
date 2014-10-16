@@ -16,10 +16,10 @@ Plugin 'croaky/vim-colors-github'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 "Plugin 'pbrisbin/vim-mkdir'
-" Plugin 'scrooloose/syntastic'  " FIXME: So slow opening/switching between files
+"Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim'
 Plugin 'thoughtbot/vim-rspec'
-Plugin 'tpope/vim-bundler'
+" Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-fugitive'
@@ -54,6 +54,7 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-repeat'
 "Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tsigo/vim-dependencywtf'
 
 " junegunn/vim-easy-align
     vmap <Enter> <Plug>(EasyAlign)
@@ -66,11 +67,6 @@ Plugin 'tpope/vim-unimpaired'
     " let g:ctrlp_max_files = 5000
     let g:ctrlp_open_multiple_files = 't'
     " let g:ctrlp_working_path_mode = 2
-
-    " if executable('ag')
-    "   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-    "   let g:ctrlp_use_caching = 1
-    " endif
 
     map <Leader>b :CtrlPBuffer<CR>
     map <Leader>g :CtrlPTag<CR>
@@ -88,14 +84,15 @@ Plugin 'tpope/vim-unimpaired'
     autocmd User Rails map <Leader>v :CtrlP app/views/<cr>
 
 " thoughtbot/vim-rspec
+    let g:rspec_runner = "os_x_iterm"
     " let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
 
 " AndrewRadev/switch.vim
     nnoremap - :Switch<cr>
 
 " tpope/vim-commentary
-    nmap <Leader>cc gcc
-    vmap <Leader>cc gc
+    nmap <Leader>cc :echoe "Use gcc"<cr>
+    vmap <Leader>cc :echoe "Use gc"<cr>
 
 " scrooloose/nerdtree
     " let g:NERDTreeIgnore      = ['\.rbc$', '\~$', '.DS_Store$']
