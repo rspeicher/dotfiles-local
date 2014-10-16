@@ -9,3 +9,6 @@ unbind-key t
 
 # Faster pageup for stacktraces and whatnot
 bind ^U copy-mode -u
+
+# Integrate with OS X pasteboard.
+set -g default-command "reattach-to-user-namespace -l zsh"
