@@ -90,10 +90,6 @@ Plugin 'tsigo/vim-dependencywtf'
 " AndrewRadev/switch.vim
     nnoremap - :Switch<cr>
 
-" tpope/vim-commentary
-    nmap <Leader>cc :echoe "Use gcc"<cr>
-    vmap <Leader>cc :echoe "Use gc"<cr>
-
 " scrooloose/nerdtree
     " let g:NERDTreeIgnore      = ['\.rbc$', '\~$', '.DS_Store$']
     let g:NERDTreeChDirMode   = 2

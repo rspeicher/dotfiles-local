@@ -10,7 +10,6 @@ alias gd='git diff'
 alias gi='git add -i'
 alias gp='git push'
 alias gs='git status'
-alias hub='gh'
 
 # Bundler
 alias be="bundle exec"
