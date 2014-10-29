@@ -1,0 +1,6 @@
+aliases.* linguist-language=Shell
+gvimrc.*  linguist-language=VimL
+vimrc.*   linguist-language=VimL
+zsh/**/*  linguist-language=Shell
+zshenv.*  linguist-language=Shell
+zshrc.*   linguist-language=Shell
