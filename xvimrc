@@ -1,0 +1,6 @@
+set nowrap
+
+set clipboard=unnamed
+
+" Go from insert back to normal with 'jk'
+imap jk <Esc>
