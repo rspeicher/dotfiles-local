@@ -1,38 +1,6 @@
-if &compatible
-  set nocompatible
-end
-
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" thoughtbot
-" Define bundles via Github repos
-Plugin 'christoomey/vim-run-interactive'
-Plugin 'croaky/vim-colors-github'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-"Plugin 'pbrisbin/vim-mkdir'
-Plugin 'scrooloose/syntastic'
-Plugin 'slim-template/vim-slim'
-Plugin 'thoughtbot/vim-rspec'
-" Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-eunuch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/ctags.vim'
-Plugin 'vim-scripts/matchit.zip'
-"Plugin 'vim-scripts/tComment'
-
-" rspeicher
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'AndrewRadev/switch.vim'
+Plugin 'Keithbsmiley/swift.vim'
 Plugin 'bling/vim-airline'
 "Plugin 'jc00ke/vim-tomdoc'
 "Plugin 'jnwhiteh/vim-golang'
@@ -51,7 +19,6 @@ Plugin 'tpope/vim-dispatch'
 "Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-rake'
-Plugin 'tpope/vim-repeat'
 "Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tsigo/vim-dependencywtf'
@@ -112,13 +79,3 @@ Plugin 'tsigo/vim-dependencywtf'
         endif
       endif
     endfunction
-
-"runtime macros/matchit.vim
-" rspeicher END
-
-if filereadable(expand("~/.vimrc.bundles.local"))
-  source ~/.vimrc.bundles.local
-endif
-
-call vundle#end()
-filetype on
