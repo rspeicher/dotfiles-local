@@ -3,14 +3,14 @@
 
 function linkGems() {
   if (document.location.href.match(/\/blob\/.*\/Gemfile/)) {
-    $('div.line span.n:contains("gem")+span.s2, div.line span.n:contains("gem")+span.s1').each(function() {
+    $('span.pl-k:contains("gem")+span.pl-s1, span.pl-k:contains("gem")+span.pl-s2').each(function() {
       var gem_name = $(this).text().replace(/['"]/g, '')
       $(this).html('"<a href="http://rubygems.org/gems/' + gem_name + '" target="_new">' + gem_name + '</a>"')
     })
 
     // Use the same color
-    $('span.s1 a').css('color', $('span.s1').css('color'))
-    $('span.s2 a').css('color', $('span.s2').css('color'))
+    $('span.pl-s1 a').css('color', $('span.pl-s1').css('color'))
+    $('span.pl-s2 a').css('color', $('span.pl-s2').css('color'))
   }
 }
 
