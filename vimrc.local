@@ -30,6 +30,11 @@ nmap Q gqap
 set timeoutlen=500
 set ttimeoutlen=10
 
+" Folding
+set foldnestmax=3 " Deepest fold level
+set nofoldenable  " Don't fold by default
+set foldlevel=99  " Don't fold everything when we do enable folding
+
 " Use 'gp' to select the just-pasted block in visual line mode
 nnoremap gp V`]
 
