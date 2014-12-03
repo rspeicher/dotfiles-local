@@ -12,3 +12,6 @@ bind ^U copy-mode -u
 
 # Integrate with OS X pasteboard.
 set -g default-command "reattach-to-user-namespace -l zsh"
+
+# Yank to system clipboard
+bind -t vi-copy y copy-pipe 'pbcopy'
