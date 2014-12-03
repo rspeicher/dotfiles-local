@@ -49,6 +49,11 @@ vmap P p :call setreg('"', getreg('0')) <CR>
 " See https://github.com/vim-ruby/vim-ruby/issues/33
 let g:ruby_path=$PATH
 
+" We'd define these in vimrc.bundles.local, but they'd be overwritten
+map <Leader>t <Plug>RunCurrentSpecFile
+map <Leader>s <Plug>RunFocusedSpec
+map <Leader>l <Plug>RunMostRecentSpec
+
 augroup vimrcLocalEx
   " Source vimrc after writing it (or .local version)
   autocmd! BufWritePost *vimrc,*vimrc.local source $MYVIMRC
