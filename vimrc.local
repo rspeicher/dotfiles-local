@@ -51,5 +51,6 @@ let g:ruby_path=$PATH
 
 augroup vimrcLocalEx
   " Source vimrc after writing it (or .local version)
-  autocmd! BufWritePost .vimrc,.vimrc.local,vimrc,vimrc.local source $MYVIMRC
+  autocmd! BufWritePost *vimrc,*vimrc.local source $MYVIMRC
+  autocmd! BufWritePost *vimrc.bundles,*vimrc.bundles.local source $MYVIMRC
 augroup END
