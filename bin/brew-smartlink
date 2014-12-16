@@ -1,0 +1,6 @@
+#!//bin/zsh
+
+brew linkapps
+
+echo "Removing QT app links"
+rm -r /Applications/{Linguist.app,Assistant.app,Designer.app,QMLViewer.app,qttracereplay.app}
