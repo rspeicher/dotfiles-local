@@ -2,7 +2,6 @@ Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'AndrewRadev/switch.vim'
 Plugin 'Keithbsmiley/swift.vim'
 Plugin 'bling/vim-airline'
-Plugin 'gabebw/vim-spec-runner'
 "Plugin 'jc00ke/vim-tomdoc'
 "Plugin 'jnwhiteh/vim-golang'
 Plugin 'junegunn/vim-easy-align'
@@ -22,9 +21,6 @@ Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tsigo/vim-dependencywtf'
-
-" gabebw/vim-spec-runner
-    let g:spec_runner_dispatcher = 'Dispatch {command}'
 
 " junegunn/vim-easy-align
     vmap <Enter> <Plug>(EasyAlign)
@@ -52,6 +48,10 @@ Plugin 'tsigo/vim-dependencywtf'
     autocmd User Rails map <Leader>m :CtrlP app/models/<cr>
     autocmd User Rails map <Leader>u :CtrlP spec/models/<cr>
     autocmd User Rails map <Leader>v :CtrlP app/views/<cr>
+
+" thoughtbot/vim-rspec
+    let g:rspec_runner = "os_x_iterm"
+    " let g:rspec_command = "compiler rspec | set makeprg=zeus | Make rspec {spec}"
 
 " AndrewRadev/switch.vim
     nnoremap - :Switch<cr>
