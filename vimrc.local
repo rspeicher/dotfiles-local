@@ -1,3 +1,5 @@
+set ignorecase
+
 " Don't lose buffer history on switch (i.e., <c-^>)
 set hidden
 
