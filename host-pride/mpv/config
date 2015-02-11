@@ -4,9 +4,7 @@ no-input-default-bindings
 # Show the OSD for longer
 osd-duration=2000
 
-# Start muted
 volume=50
-mute
 
 # Start centered
 geometry=50%:50%
