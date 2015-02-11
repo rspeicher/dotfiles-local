@@ -5,6 +5,7 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   rc = rebase --continue
   sub = submodule
+  track = !sh -c 'git checkout --track "$1"'
 
   j = stash
   jl = stash list
