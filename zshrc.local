@@ -20,5 +20,4 @@ zstyle ':completion:*' list-colors ''
 bindkey jk vi-cmd-mode
 
 # Host-specific local configs (e.g., ~/.zshrc.laptop.local)
-set -- ~/.zshrc.*.local
-[ "$#" -gt 0 ] && source "$@"
+for f in ~/.zshrc.*.local; do source "$f"; done
