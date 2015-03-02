@@ -1,32 +1,38 @@
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'AndrewRadev/switch.vim'
-Plugin 'Keithbsmiley/swift.vim'
 Plugin 'bling/vim-airline'
-"Plugin 'jc00ke/vim-tomdoc'
-"Plugin 'jnwhiteh/vim-golang'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
-"Plugin 'nginx.vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-dispatch'
-"Plugin 'tpope/vim-git'
-"Plugin 'tpope/vim-haml'
-"Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tsigo/vim-dependencywtf'
 
+" Language support
+Plugin 'Keithbsmiley/swift.vim'
+Plugin 'fatih/vim-go'
+Plugin 'mutewinter/nginx.vim'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+
+if has('mac')
+  Plugin 'rizzatti/dash.vim'
+  nmap <silent> <Leader>* <Plug>DashSearch
+endif
+
 " junegunn/vim-easy-align
     vmap <Enter> <Plug>(EasyAlign)
     nmap <Leader>a <Plug>(EasyAlign)
 
-" kien/ctrlp.vim
+" ctrlpvim/ctrlp.vim
     " let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
     " let g:ctrlp_dotfiles = 0
     " let g:ctrlp_max_depth = 15
