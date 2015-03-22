@@ -16,8 +16,9 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tsigo/vim-dependencywtf'
 
 " Language support
-Plugin 'Keithbsmiley/swift.vim'
+Plugin 'chase/vim-ansible-yaml'
 Plugin 'fatih/vim-go'
+Plugin 'Keithbsmiley/swift.vim'
 Plugin 'mutewinter/nginx.vim'
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-haml'
@@ -83,3 +84,12 @@ endif
         endif
       endif
     endfunction
+
+" scrooloose/syntastic
+    let g:syntastic_quiet_messages = {
+        \ "type":    "style",
+        \ "regex":   '\m.*reference to past scope.*',
+        \ "file:p":  ['\m_spec\.rb$'] }
+
+" chase/vim-ansible-yaml
+    let g:ansible_options = {'ignore_blank_lines': 0}
