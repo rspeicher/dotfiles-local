@@ -2,9 +2,10 @@
 # export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 
 # http://golang.org/doc/code.html#GOPATH
+export GOROOT=/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/Code/go
 
-export PATH=$GOPATH/bin:$PATH
+export PATH=$GOROOT/bin:$PATH
 
 # load pyenv if available
 if which pyenv &>/dev/null ; then
