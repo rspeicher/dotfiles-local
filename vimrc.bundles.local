@@ -86,10 +86,10 @@ endif
     endfunction
 
 " scrooloose/syntastic
-    let g:syntastic_quiet_messages = {
-        \ "type":    "style",
-        \ "regex":   '\m.*reference to past scope.*',
-        \ "file:p":  ['\m_spec\.rb$'] }
+    let g:syntastic_ruby_mri_quiet_messages = {'regex': 'reference to past scope'}
+    let g:syntastic_python_flake8_quiet_messages = {'regex': [
+          \ 'line too long',
+          \ 'whitespace' ]}
 
 " chase/vim-ansible-yaml
     let g:ansible_options = {'ignore_blank_lines': 0}
