@@ -41,7 +41,7 @@ set foldlevel=99  " Don't fold everything when we do enable folding
 nnoremap gp V`]
 
 " Quick macro to strip trailing whitespace
-nnoremap @w :%s/\v\s+$//g<cr>
+let @w = ':%s/\v\s+$//g'
 
 " Use Shift+P while in visual mode to replace the selection without overwriting
 " the default register
