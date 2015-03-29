@@ -51,6 +51,17 @@ vmap P p :call setreg('"', getreg('0')) <CR>
 " See https://github.com/vim-ruby/vim-ruby/issues/33
 let g:ruby_path=$PATH
 
+" Delete comment character when joining commented lines
+if v:version > 703 || v:version == 703 && has("patch541")
+  set formatoptions+=j
+endif
+
+" Reload files changed outside Vim
+set autoread
+
+" Don't complete from included files: http://git.io/jwXC
+set complete-=i
+
 augroup vimrcLocalEx
   " Source vimrc after writing it (or .local version)
   autocmd! BufWritePost *vimrc,*vimrc.local source $MYVIMRC
