@@ -93,3 +93,8 @@ endif
 
 " chase/vim-ansible-yaml
     let g:ansible_options = {'ignore_blank_lines': 0}
+
+" tpope/vim-ragtag
+    augroup ragtagCustom
+      autocmd BufRead,BufNewFile *.jsx call RagtagInit()
+    augroup END
