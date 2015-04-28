@@ -40,8 +40,11 @@ set foldlevel=99  " Don't fold everything when we do enable folding
 " Use 'gp' to select the just-pasted block in visual line mode
 nnoremap gp V`]
 
-" Quick macro to strip trailing whitespace
+" Quick macro to strip trailing (W)hitespace in the entire file
 let @w = ':%s/\v\s+$//g'
+
+" Quick macro to (S)queeze whitespace on the current line
+let @s = ':s/\v\s+/ /g'
 
 " Use Shift+P while in visual mode to replace the selection without overwriting
 " the default register
