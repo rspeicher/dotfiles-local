@@ -16,6 +16,15 @@ set -g default-command "safe-reattach-to-user-namespace -l $SHELL"
 # Yank to system clipboard
 bind -t vi-copy y copy-pipe 'pbcopy'
 
+# Easier splits
+unbind-key '"'
+unbind-key '%'
+bind-key | split-window -h
+bind-key _ split-window -v
+
+# Quickly source config
+bind-key S source-file ~/.tmux.conf \; display-message "Config reloaded..."
+
 # Experimental
 # ------------
 
@@ -30,11 +39,4 @@ bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'V' rectangle-toggle
 bind-key -t vi-copy 'y' copy-pipe "pbcopy"
 
-# Easier splits
-unbind-key '"'
-unbind-key '%'
-bind-key | split-window -h
-bind-key _ split-window -v
 
-# Quickly source config
-bind-key S source-file ~/.tmux.conf \; display-message "Config reloaded..."
