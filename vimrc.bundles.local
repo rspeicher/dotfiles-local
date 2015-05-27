@@ -31,18 +31,21 @@ if has('mac')
   nmap <silent> <Leader>* <Plug>DashSearch
 endif
 
+" bling/vim-airline
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#tab_nr_type = 2
+    let g:airline#extensions#tabline#show_buffers = 0
+    let g:airline#extensions#tabline#show_close_button = 0
+
 " junegunn/vim-easy-align
     vmap <Enter> <Plug>(EasyAlign)
     nmap <Leader>a <Plug>(EasyAlign)
 
 " ctrlpvim/ctrlp.vim
-    " let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
-    " let g:ctrlp_dotfiles = 0
-    " let g:ctrlp_max_depth = 15
-    " let g:ctrlp_max_files = 5000
+    let g:ctrlp_max_depth = 15
+    let g:ctrlp_max_files = 5000
     let g:ctrlp_open_multiple_files = 't'
     let g:ctrlp_match_window = 'max:15,results:15'
-    " let g:ctrlp_working_path_mode = 2
 
     map <Leader>b :CtrlPBuffer<CR>
     map <Leader>g :CtrlPTag<CR>
@@ -64,6 +67,9 @@ endif
 
 " AndrewRadev/switch.vim
     nnoremap - :Switch<cr>
+
+" rking/ag.vim
+    let g:ag_prg="ag --vimgrep --nogroup --nocolor"
 
 " scrooloose/nerdtree
     " let g:NERDTreeIgnore      = ['\.rbc$', '\~$', '.DS_Store$']
