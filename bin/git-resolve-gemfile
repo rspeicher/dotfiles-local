@@ -2,4 +2,3 @@ git reset HEAD Gemfile.lock
 git checkout -- Gemfile.lock
 bundle install
 git add Gemfile.lock
-git rebase --continue
