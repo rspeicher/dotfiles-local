@@ -16,11 +16,14 @@ set -g default-command "safe-reattach-to-user-namespace -l $SHELL"
 # Yank to system clipboard
 bind -t vi-copy y copy-pipe 'pbcopy'
 
+# Open new windows in the current path
+bind c new-window -c '#{pane_current_path}'
+
 # Easier splits
 unbind-key '"'
 unbind-key '%'
-bind-key | split-window -h
-bind-key _ split-window -v
+bind-key | split-window -h -c '#{pane_current_path}'
+bind-key _ split-window -v -c '#{pane_current_path}'
 
 # Quickly source config
 bind-key S source-file ~/.tmux.conf \; display-message "Config reloaded..."
