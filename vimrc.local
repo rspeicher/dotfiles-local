@@ -72,4 +72,7 @@ augroup vimrcLocalEx
 
   " Special handling for Go files
   au BufNewFile,BufRead *.go setlocal noet nolist ts=4 sw=4 sts=4
+
+  " Auto-insert comment leader in stylesheets
+  autocmd FileType css,scss,sass setlocal formatoptions+=ro
 augroup END
