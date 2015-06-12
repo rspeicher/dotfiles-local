@@ -25,8 +25,41 @@ bind-key _ split-window -v
 # Quickly source config
 bind-key S source-file ~/.tmux.conf \; display-message "Config reloaded..."
 
+# https://github.com/chrishunt/dot-files/blob/master/.tmux.conf
+# -----------------------------------------------------------------------------
+
+# enable UTF-8 support in status bar
+set -g status-utf8 on
+
+# set refresh interval for status bar
+set -g status-interval 30
+
+# center the status bar
+set -g status-justify left
+
+# show session, window, pane in left status bar
+set -g status-left-length 40
+set -g status-left '#[fg=green]#S#[fg=blue] #I:#P #[default]'
+
+# show hostname, date, time
+set-option -g status-right '#[fg=green]#H#[default] %m/%d/%y %I:%M'
+
+# color status bar
+set -g status-bg colour235
+set -g status-fg white
+
+# highlight current window
+set-window-option -g window-status-current-fg black
+set-window-option -g window-status-current-bg green
+
+# set color of active pane
+set -g pane-border-fg colour235
+set -g pane-border-bg black
+set -g pane-active-border-fg green
+set -g pane-active-border-bg black
+
 # Experimental
-# ------------
+# -----------------------------------------------------------------------------
 
 set-option -g status-keys vi
 
@@ -38,5 +71,3 @@ bind-key p paste-buffer
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'V' rectangle-toggle
 bind-key -t vi-copy 'y' copy-pipe "pbcopy"
-
-
