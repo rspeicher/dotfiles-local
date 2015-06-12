@@ -101,10 +101,22 @@ endif
           \ 'line too long',
           \ 'whitespace' ]}
 
-" chase/vim-ansible-yaml
-    let g:ansible_options = {'ignore_blank_lines': 0}
-
 " tpope/vim-ragtag
     augroup ragtagCustom
       autocmd BufRead,BufNewFile *.jsx call RagtagInit()
     augroup END
+
+" tpope/vim-rails
+    let g:rails_projections = {
+      \"app/assets/javascripts/*.js.coffee": {
+        \"alternate": ["spec/javascripts/{}_spec.js.coffee"],
+        \"command": "javascript",
+        \"test": ["spec/javascripts/{}_spec.js.coffee"],
+      \},
+      \"spec/javascripts/*_spec.js.coffee": {
+        \"related": ["spec/javascripts/fixtures/{}.html.haml"],
+      \},
+    \}
+
+" chase/vim-ansible-yaml
+    let g:ansible_options = {'ignore_blank_lines': 0}
