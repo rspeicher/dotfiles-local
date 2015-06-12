@@ -75,4 +75,7 @@ augroup vimrcLocalEx
 
   " Auto-insert comment leader in stylesheets
   autocmd FileType css,scss,sass setlocal formatoptions+=ro
+
+  " Remove format options when filetype is blank (i.e., Global Replace buffer)
+  autocmd BufEnter * if &filetype == '' | setlocal fo=
 augroup END
