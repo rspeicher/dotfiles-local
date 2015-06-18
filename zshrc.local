@@ -21,3 +21,5 @@ bindkey jk vi-cmd-mode
 
 # Host-specific local configs (e.g., ~/.zshrc.laptop.local)
 for f in ~/.zshrc.*.local; do source "$f"; done
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
