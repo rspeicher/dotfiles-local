@@ -40,7 +40,6 @@ endif
 
 " junegunn/vim-easy-align
     vmap <Enter> <Plug>(EasyAlign)
-    nmap <Leader>a <Plug>(EasyAlign)
 
 " ctrlpvim/ctrlp.vim
     let g:ctrlp_max_depth = 15
