@@ -121,3 +121,8 @@ endif
     let g:ansible_options = {'ignore_blank_lines': 0}
 
 Plug 'SirVer/ultisnips'
+    let g:UltiSnipsJumpForwardTrigger = '<c-l>'
+    " let g:UltiSnipsJumpBackwardTrigger = ''
+
+Plug 'ervandew/supertab'
+    let g:SuperTabCompleteCase = 'match'
