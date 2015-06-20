@@ -65,6 +65,9 @@ set autoread
 " Don't complete from included files: http://git.io/jwXC
 set complete-=i
 
+" Don't complete from tags
+set complete-=t
+
 augroup vimrcLocalEx
   " Source vimrc after writing it (or .local version)
   autocmd! BufWritePost *vimrc,*vimrc.local source $MYVIMRC
@@ -78,4 +81,10 @@ augroup vimrcLocalEx
 
   " Remove format options when filetype is blank (i.e., Global Replace buffer)
   autocmd BufEnter * if &filetype == '' | setlocal fo=
+
+  " Complete from tags in commit messages, since I like it there
+  autocmd FileType gitcommit setlocal complete+=t
+
+  " Override some annoying changelog defaults
+  autocmd FileType changelog setlocal et
 augroup END
