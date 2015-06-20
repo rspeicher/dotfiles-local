@@ -1,10 +1,13 @@
 tap thoughtbot/formulae
 install rcm
 
+install ansible
 install ctags-exuberant
-install gh
+install fzf
 install git
 install git-extras
+install httpie
+install hub
 install id3v2
 install imagemagick
 install irssi
@@ -19,12 +22,15 @@ install mysql
 install node
 install postgresql
 install rbenv-default-gems
+install reattach-to-user-namespace
 install redis
 install rename
+install shellcheck
 install taglib
 install the_silver_searcher
 install tig
 install tmux
+install tree
 install vim
 install wget
 install youtube-dl
@@ -36,7 +42,12 @@ install --with-bundle --HEAD mpv
 tap phinze/cask
 install brew-cask
 
+cask install adapter
+cask install appcleaner
+cask install caffeine
 cask install qlstephen
+cask install quicklook-json
+cask install rowanj-gitx
 
 linkapps
 cleanup
