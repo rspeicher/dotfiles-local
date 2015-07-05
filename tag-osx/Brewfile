@@ -37,17 +37,20 @@ install youtube-dl
 install zsh-completions
 
 tap mpv-player/mpv
-install --with-bundle --HEAD mpv
+install mpv
 
 tap phinze/cask
 install brew-cask
-
 cask install adapter
 cask install appcleaner
-cask install caffeine
 cask install qlstephen
 cask install quicklook-json
 cask install rowanj-gitx
+
+tap caskroom/fonts
+cask install font-dejavu-sans
+cask install font-droid-sans-mono
+cask install font-inconsolata
 
 linkapps
 cleanup
