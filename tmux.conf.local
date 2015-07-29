@@ -25,6 +25,9 @@ unbind-key '%'
 bind-key | split-window -h -c '#{pane_current_path}'
 bind-key _ split-window -v -c '#{pane_current_path}'
 
+# tmux messages are displayed for 4 seconds
+set -g display-time 4000
+
 # Quickly source config
 bind-key S source-file ~/.tmux.conf \; display-message "Config reloaded..."
 
