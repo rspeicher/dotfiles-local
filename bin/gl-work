@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ~/Code/rails/gitlab-development-kit
+cd ~/Code/gitlab/
 tmux-up
