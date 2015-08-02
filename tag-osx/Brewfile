@@ -14,17 +14,17 @@ install irssi
 install libxml2
 install macvim
 install media-info
-install mongodb
-install mp3check
-install mp3info
 install mplayer
 install mysql
 install node
 install postgresql
+install pyenv
+install rbenv
 install rbenv-default-gems
 install reattach-to-user-namespace
 install redis
 install rename
+install ruby-build
 install shellcheck
 install taglib
 install the_silver_searcher
@@ -43,14 +43,25 @@ tap phinze/cask
 install brew-cask
 cask install adapter
 cask install appcleaner
+cask install firefox
+cask install flux
+cask install iterm2
+cask install launchrocket
+cask install licecap
 cask install qlstephen
 cask install quicklook-json
 cask install rowanj-gitx
+cask install vlc
 
 tap caskroom/fonts
 cask install font-dejavu-sans
 cask install font-droid-sans-mono
 cask install font-inconsolata
+
+tap homebrew/dupes
+
+tap homebrew/versions
+install phantomjs198
 
 linkapps
 cleanup
