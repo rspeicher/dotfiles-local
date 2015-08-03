@@ -1,67 +1,64 @@
-tap thoughtbot/formulae
-install rcm
+tap 'thoughtbot/formulae'
+brew 'rcm'
 
-install ansible
-install ctags-exuberant
-install fzf
-install git
-install git-extras
-install httpie
-install hub
-install id3v2
-install imagemagick
-install irssi
-install libxml2
-install macvim
-install media-info
-install mplayer
-install mysql
-install node
-install postgresql
-install pyenv
-install rbenv
-install rbenv-default-gems
-install reattach-to-user-namespace
-install redis
-install rename
-install ruby-build
-install shellcheck
-install taglib
-install the_silver_searcher
-install tig
-install tmux
-install tree
-install vim
-install wget
-install youtube-dl
-install zsh-completions
+brew 'ansible'
+brew 'ctags-exuberant'
+brew 'fzf'
+brew 'git'
+brew 'git-extras'
+brew 'httpie'
+brew 'hub'
+brew 'id3v2'
+brew 'imagemagick'
+brew 'irssi'
+brew 'libxml2'
+brew 'macvim'
+brew 'media-info'
+brew 'mplayer'
+brew 'mysql'
+brew 'node'
+brew 'postgresql'
+brew 'pyenv'
+brew 'rbenv'
+brew 'rbenv-default-gems'
+brew 'reattach-to-user-namespace'
+brew 'redis'
+brew 'rename'
+brew 'ruby-build'
+brew 'shellcheck'
+brew 'taglib'
+brew 'the_silver_searcher'
+brew 'tig'
+brew 'tmux'
+brew 'tree'
+brew 'vim'
+brew 'wget'
+brew 'youtube-dl'
+brew 'zsh-completions'
 
-tap mpv-player/mpv
-install mpv
+tap 'mpv-player/mpv'
+brew 'mpv'
 
-tap phinze/cask
-install brew-cask
-cask install adapter
-cask install appcleaner
-cask install firefox
-cask install flux
-cask install iterm2
-cask install launchrocket
-cask install licecap
-cask install qlstephen
-cask install quicklook-json
-cask install rowanj-gitx
-cask install vlc
+tap 'phinze/cask'
+brew 'brew-cask'
+cask 'adapter'
+cask 'appcleaner'
+cask 'firefox'
+cask 'flux'
+cask 'iterm2'
+cask 'launchrocket'
+cask 'licecap'
+cask 'qlstephen'
+cask 'quicklook-json'
+cask 'rowanj-gitx'
+cask 'vlc'
 
-tap caskroom/fonts
-cask install font-dejavu-sans
-cask install font-droid-sans-mono
-cask install font-inconsolata
+tap 'caskroom/fonts'
+cask 'font-dejavu-sans'
+cask 'font-droid-sans-mono'
+cask 'font-inconsolata'
 
-tap homebrew/dupes
+tap 'homebrew/dupes'
 
-tap homebrew/versions
-install phantomjs198
-
-linkapps
-cleanup
+tap 'homebrew/versions'
+brew 'phantomjs198'
