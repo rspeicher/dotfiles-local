@@ -34,7 +34,8 @@ bind-key S source-file ~/.tmux.conf \; display-message "Config reloaded..."
 # https://github.com/chrishunt/dot-files/blob/master/.tmux.conf
 # -----------------------------------------------------------------------------
 
-# enable UTF-8 support in status bar
+# enable UTF-8 support
+set -g utf8 on
 set -g status-utf8 on
 
 # set refresh interval for status bar
@@ -47,8 +48,8 @@ set -g status-justify left
 set -g status-left-length 40
 set -g status-left '#[fg=green]#S#[fg=blue] #I:#P #[default]'
 
-# show hostname, date, time
-set-option -g status-right '#[fg=green]#H#[default] %m/%d/%y %I:%M'
+# show hostname, date, time, battery
+set-option -g status-right '#[fg=green]#H#[default] %m/%d/%y %I:%M #{battery_icon} #{battery_percentage} #{battery_remain}'
 
 # color status bar
 set -g status-bg colour235
@@ -77,3 +78,11 @@ bind-key p paste-buffer
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'V' rectangle-toggle
 bind-key -t vi-copy 'y' copy-pipe "pbcopy"
+
+# tpm Plugins - https://github.com/tmux-plugins/tpm
+set -g @tpm_plugins '        \
+  tmux-plugins/tpm           \
+  tmux-plugins/tmux-battery  \
+'
+
+run '~/.tmux/plugins/tpm/tpm'
