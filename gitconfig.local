@@ -1,5 +1,6 @@
 [alias]
   ai = add -i
+  cp = cherry-pick
   dc = diff --cached
   fixup = commit --amend --no-edit
   l = log --pretty=colored
