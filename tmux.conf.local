@@ -77,3 +77,6 @@ bind-key p paste-buffer
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'V' rectangle-toggle
 bind-key -t vi-copy 'y' copy-pipe "pbcopy"
+
+# super useful when using "grouped sessions" and multi-monitor setup
+setw -g aggressive-resize on
