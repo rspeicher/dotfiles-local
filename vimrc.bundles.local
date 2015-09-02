@@ -1,3 +1,4 @@
+Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'bling/vim-airline'
@@ -130,4 +131,3 @@ endif
 " ervandew/supertab
     let g:SuperTabCompleteCase = 'match'
 
-Plug 'airblade/vim-gitgutter'
