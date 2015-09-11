@@ -2,10 +2,7 @@
 # export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 
 # http://golang.org/doc/code.html#GOPATH
-export GOROOT=/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/Code/go
-
-export PATH=$GOROOT/bin:$PATH
 
 # Always install Homebrew Casks to the root Applications directory
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
