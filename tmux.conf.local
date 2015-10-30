@@ -48,7 +48,7 @@ set -g status-left-length 40
 set -g status-left '#[fg=green]#S#[fg=blue] #I:#P #[default]'
 
 # show hostname, date, time
-set-option -g status-right '#[fg=green]#H#[default] | #{battery_icon} #{battery_percentage} #{battery_remain} | %m/%d/%y %I:%M'
+set-option -g status-right '#[fg=green]#H#[default] | #{battery_icon} #{battery_percentage} #{battery_remain} | %Y-%m-%d %I:%M'
 
 # color status bar
 set -g status-bg colour235
