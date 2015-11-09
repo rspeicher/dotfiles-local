@@ -188,7 +188,8 @@ class MusicMover
         # Write the change back to iTunes so it actually persists
         new_filename = opts[:pretend] ? shorten(new_filename) : new_filename
         itunes %{set location of #{track[:track].strip} to POSIX file "#{new_filename}" as alias}, opts[:pretend]
-      rescue Exception => e
+      rescue StandardError => e
+        puts "Error: #{e}"
         # Ignore any exceptions about directory already existing or failing to
         # delete the old one.
       end
