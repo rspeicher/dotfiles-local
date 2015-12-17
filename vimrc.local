@@ -68,9 +68,6 @@ set complete-=i
 " Don't complete from tags
 set complete-=t
 
-" Single space after a period when reformatting paragraphs
-set nojoinspaces
-
 " (p)review in Marked 2
 nnoremap <leader>p :silent !open -a Marked\ 2.app '%:p'<cr>:redraw!<cr>
 
