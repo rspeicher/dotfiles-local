@@ -6,9 +6,3 @@ export GOPATH=$HOME/Code/go
 
 # Always install Homebrew Casks to the root Applications directory
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-# load pyenv if available
-if which pyenv &>/dev/null ; then
-  export PYENV_ROOT=/usr/local/opt/pyenv
-  eval "$(pyenv init -)"
-fi
