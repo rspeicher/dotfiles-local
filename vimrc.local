@@ -15,6 +15,9 @@ map <Leader>Vv :tabedit ~/.vimrc.local<CR>
 map <Leader>VB :tabedit ~/.vimrc.bundles<CR>
 map <Leader>Vb :tabedit ~/.vimrc.bundles.local<CR>
 
+" FZF
+set rtp+=/usr/local/opt/fzf
+
 " The superior colorscheme
 colorscheme molokai
 
@@ -71,6 +74,9 @@ set complete-=t
 " (p)review in Marked 2
 nnoremap <leader>p :silent !open -a Marked\ 2.app '%:p'<cr>:redraw!<cr>
 
+" Faster vim-gitgutter updates
+set updatetime=1000
+
 augroup vimrcLocalEx
   " Source vimrc after writing it (or .local version)
   autocmd! BufWritePost *vimrc,*vimrc.local source $MYVIMRC
@@ -92,6 +98,9 @@ augroup vimrcLocalEx
 
   " Override some annoying changelog defaults
   autocmd FileType changelog setlocal et
+
+  " Autoindent Markdown and commit messages
+  autocmd FileType markdown,gitcommit setlocal ai
 augroup END
 
 " Highlight repeated lines in a range
