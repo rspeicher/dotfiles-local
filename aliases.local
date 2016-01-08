@@ -9,7 +9,7 @@ alias gc='git commit -v'
 alias gca='gc --amend'
 alias gd='git diff'
 alias gi='git add -i'
-alias gp='git push'
+alias gp='git push -u'
 alias gs='git status'
 
 # Bundler
@@ -30,3 +30,4 @@ alias mp3fix="mp3check -rBe --cut-junk-start --cut-junk-end"
 alias psname="ps aux | grep -i"
 alias youtube-mp3="youtube-dl -t --no-mtime --extract-audio --audio-format mp3 --audio-quality 192"
 alias serve="python -m SimpleHTTPServer"
+alias redact="vim ~/.zhistory +"
