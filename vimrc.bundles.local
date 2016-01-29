@@ -22,7 +22,6 @@ Plug 'yegappan/greplace'
 
 " Language support
 Plug 'chase/vim-ansible-yaml'
-Plug 'fatih/vim-go'
 Plug 'Keithbsmiley/swift.vim'
 Plug 'mutewinter/nginx.vim'
 Plug 'mxw/vim-jsx'
