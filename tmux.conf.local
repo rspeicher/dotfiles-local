@@ -81,6 +81,8 @@ set-option -g status-keys vi
 # super useful when using "grouped sessions" and multi-monitor setup
 setw -g aggressive-resize on
 
+bind-key N previous-window
+
 # Ctrl+Shif+Arrows to resize panes
 bind-key -n C-S-Up resize-pane -U 10
 bind-key -n C-S-Down resize-pane -D 10
