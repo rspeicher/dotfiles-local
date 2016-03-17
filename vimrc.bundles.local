@@ -18,6 +18,7 @@ Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-unimpaired'
 Plug 'tsigo/vim-dependencywtf'
+Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'yegappan/greplace'
 
 " Language support
