@@ -9,7 +9,8 @@ alias gc='git commit -v'
 alias gca='gc --amend'
 alias gd='git diff'
 alias gi='git add -i'
-alias gp='git push -u'
+alias gp='git push'
+alias gpu='git push -u'
 alias gs='git status'
 
 # Bundler
