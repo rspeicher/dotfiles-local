@@ -6,3 +6,5 @@ export GOPATH=$HOME/Code/go
 
 # Always install Homebrew Casks to the root Applications directory
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+export HOMEBREW_NO_ANALYTICS=1
