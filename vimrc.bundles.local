@@ -134,3 +134,5 @@ endif
 " ervandew/supertab
     let g:SuperTabCompleteCase = 'match'
 
+" tpope/fugitive
+    autocmd QuickFixCmdPost *grep* cwindow
