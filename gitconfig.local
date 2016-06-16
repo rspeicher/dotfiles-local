@@ -1,14 +1,17 @@
 [alias]
   ai = add -i
   cp = cherry-pick
+  cpm = cherry-pick -m 1
   dc = diff --cached
   fa = fetch --all
   fo = fetch origin
   fixup = commit --amend --no-edit
   l = log --pretty=colored
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  next-commit = !git checkout $(git log --reverse --ancestry-path --pretty=%H HEAD..master | head -1)
   rc = rebase --continue
   ri = rebase -i
+  stat = show --stat
   sub = submodule
 
   j = stash
@@ -25,3 +28,4 @@
 [user]
   name = Robert Speicher
   email = rspeicher@gmail.com
+  signingkey = BE807A72
