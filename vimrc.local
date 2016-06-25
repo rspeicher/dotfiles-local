@@ -83,6 +83,7 @@ augroup vimrcLocalEx
   autocmd! BufWritePost *vimrc.bundles,*vimrc.bundles.local source $MYVIMRC
 
   autocmd BufRead,BufNewFile Procfile set filetype=yaml
+  autocmd BufRead,BufNewFile CHANGELOG set fo-=t nowrap
 
   " Special handling for Go files
   au BufNewFile,BufRead *.go setlocal noet nolist ts=4 sw=4 sts=4
