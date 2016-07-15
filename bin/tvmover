@@ -26,6 +26,7 @@ def specialcase(string)
   string = "Louie (2010)" if string.downcase == 'louie'
   string = 'Archer (2009)' if string.downcase == 'archer'
   string = "Bob's Burgers" if string.downcase == 'bobs burgers'
+  string = "Mr. Robot" if string.downcase == 'mr robot'
 
   string
 end
