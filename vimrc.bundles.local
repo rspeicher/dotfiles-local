@@ -2,6 +2,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'bling/vim-airline'
+Plug 'christoomey/vim-tmux-runner'
 Plug 'endel/vim-github-colorscheme'
 Plug 'ervandew/supertab'
 Plug 'junegunn/fzf.vim'
@@ -44,6 +45,10 @@ endif
     let g:airline#extensions#tabline#tab_nr_type = 2
     let g:airline#extensions#tabline#show_buffers = 0
     let g:airline#extensions#tabline#show_close_button = 0
+
+" christoomey/vim-tmux-runner
+    map <Leader>ra :VtrAttachToPane<CR>
+    map <Leader>rl :VtrSendLinesToRunner<CR>
 
 " junegunn/vim-easy-align
     vmap <Enter> <Plug>(EasyAlign)
