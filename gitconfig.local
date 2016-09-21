@@ -3,6 +3,7 @@
   cp = cherry-pick
   cpm = cherry-pick -m 1
   dc = diff --cached
+  dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
   fa = fetch --all
   fo = fetch origin
   fixup = commit --amend --no-edit
@@ -31,6 +32,11 @@
   stab   = "!f() { br=`git branch --list [0-9]*-[0-9]*-stable | tail -1 | tr -d ' ' | sed 's/*//'`; git checkout $br && git pull --ff-only; }; f"
   # Check out the latest `X-Y-stable-ee` branch
   stabee = "!f() { br=`git branch --list [0-9]*-[0-9]*-stable-ee | tail -1 | tr -d ' ' | sed 's/*//'`; git checkout $br && git pull --ff-only; }; f"
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [grep]
   lineNumber = true
 [pretty]
