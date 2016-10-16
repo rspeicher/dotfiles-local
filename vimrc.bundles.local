@@ -112,6 +112,9 @@ endif
           \ 'line too long',
           \ 'whitespace' ]}
 
+" tpope/vim-dispatch
+    map <Leader>dp :Dispatch pry<CR>
+
 " tpope/vim-ragtag
     augroup ragtagCustom
       autocmd BufRead,BufNewFile *.jsx call RagtagInit()
