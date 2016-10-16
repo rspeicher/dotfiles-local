@@ -125,8 +125,3 @@ function! HighlightRepeats() range
 endfunction
 
 command! -range=% Repeats <line1>,<line2>call HighlightRepeats()
-
-if executable('agwrapper.sh')
-  set grepprg='agwrapper.sh'
-  let g:ag_prg='agwrapper.sh'
-endif
