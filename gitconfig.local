@@ -1,5 +1,6 @@
 [alias]
   ai = add -i
+  bl = branch -v --sort authordate
   cp = cherry-pick
   cpm = cherry-pick -m 1
   dc = diff --cached
