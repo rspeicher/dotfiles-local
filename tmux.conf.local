@@ -11,7 +11,8 @@ unbind-key t
 bind ^U copy-mode -u
 
 # Integrate with OS X pasteboard, if available.
-set -g default-command "safe-reattach-to-user-namespace -l $SHELL"
+set -g default-shell $SHELL
+set -g default-command "safe-reattach-to-user-namespace -l ${SHELL}"
 
 # Yank to system clipboard
 bind -t vi-copy y copy-pipe 'pbcopy'
