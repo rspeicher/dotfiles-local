@@ -24,6 +24,8 @@ alias tls="tmux list-sessions"
 
 # servers
 alias glutt='ssh tsigo@gluttony'
+alias pride='ssh tsigo@pride'
+alias sloth='ssh tsigo@sloth'
 alias tsigo='ssh tsigo@tsigo.com'
 
 # Convenience
