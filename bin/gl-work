@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ~/Code/gitlab/
+cd ~/Code/gitlab-development-kit/
 tmux-up gitlab.conf
