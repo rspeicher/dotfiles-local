@@ -83,6 +83,11 @@ endif
 
 " janko-m/vim-test
     let test#strategy = "dispatch"
+    let g:test#ruby#rspec#options = {
+      \ 'nearest': '--format progress',
+      \ 'file':    '--format progress',
+      \ 'suite':   '--format progress',
+    \}
 
 " AndrewRadev/switch.vim
     nnoremap - :Switch<cr>
@@ -115,12 +120,19 @@ endif
 
 " scrooloose/syntastic
     let g:syntastic_ruby_mri_quiet_messages = {'regex': 'reference to past scope'}
-    let g:syntastic_python_flake8_quiet_messages = {'regex': [
-          \ 'line too long',
-          \ 'whitespace' ]}
+    let g:syntastic_python_flake8_quiet_messages = {
+      \'regex': [
+        \'line too long',
+        \'whitespace'
+      \]
+    \}
 
 " tpope/vim-dispatch
     map <Leader>dp :Dispatch pry<CR>
+    let g:dispatch_compilers = {
+      \'bundle exec': '',
+      \':./bin/rspec': ''
+    \}
 
 " tpope/vim-ragtag
     augroup ragtagCustom
