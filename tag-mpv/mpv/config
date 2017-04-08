@@ -4,6 +4,7 @@ no-input-default-bindings
 volume=50
 
 osd-scale-by-window = no
+osd-font-size = 100
 
 # Start centered
 geometry=50%:50%
