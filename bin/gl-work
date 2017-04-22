@@ -2,3 +2,4 @@
 
 cd ~/Code/gitlab-development-kit/
 tmux-up gitlab.conf
+tmux attach -t gitlab-ce
