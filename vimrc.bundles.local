@@ -58,29 +58,46 @@ endif
       autocmd FileType ruby RainbowParentheses
     augroup END
 
+" junegunn/fzf.vim
+    nmap <c-p> :Files<CR>
+    map <Leader>b :Buffers<CR>
+    map <Leader>g :Tags<CR>
+
+    " Start Files scoped to the current file's directory
+    map <Leader>e :Files <C-R>=expand("%:h")<CR><CR>
+
+    " Files scoped to various Rails directories
+    autocmd User Rails map <Leader>c :Files app/controllers/<cr>
+    autocmd User Rails map <Leader>h :Files app/helpers/<cr>
+    autocmd User Rails map <Leader>j :Files app/assets/javascripts/<cr>
+    autocmd User Rails map <Leader>S :Files app/assets/stylesheets/<cr>
+    autocmd User Rails map <Leader>m :Files app/models/<cr>
+    autocmd User Rails map <Leader>u :Files spec/models/<cr>
+    autocmd User Rails map <Leader>v :Files app/views/<cr>
+
 " junegunn/vim-easy-align
     vmap <Enter> <Plug>(EasyAlign)
 
 " ctrlpvim/ctrlp.vim
-    let g:ctrlp_max_depth = 15
-    let g:ctrlp_max_files = 5000
-    let g:ctrlp_open_multiple_files = 't'
-    let g:ctrlp_match_window = 'max:15,results:15'
+    " let g:ctrlp_max_depth = 15
+    " let g:ctrlp_max_files = 5000
+    " let g:ctrlp_open_multiple_files = 't'
+    " let g:ctrlp_match_window = 'max:15,results:15'
 
-    map <Leader>b :CtrlPBuffer<CR>
-    map <Leader>g :CtrlPTag<CR>
+    " map <Leader>b :CtrlPBuffer<CR>
+    " map <Leader>g :CtrlPTag<CR>
 
-    " Start CtrlP scoped to the current file's directory
-    map <Leader>e :CtrlPCurFile<cr>
+    " " Start CtrlP scoped to the current file's directory
+    " map <Leader>e :CtrlPCurFile<cr>
 
-    " CtrlP scoped to various Rails directories
-    autocmd User Rails map <Leader>c :CtrlP app/controllers/<cr>
-    autocmd User Rails map <Leader>h :CtrlP app/helpers/<cr>
-    autocmd User Rails map <Leader>j :CtrlP app/assets/javascripts/<cr>
-    autocmd User Rails map <Leader>S :CtrlP app/assets/stylesheets/<cr>
-    autocmd User Rails map <Leader>m :CtrlP app/models/<cr>
-    autocmd User Rails map <Leader>u :CtrlP spec/models/<cr>
-    autocmd User Rails map <Leader>v :CtrlP app/views/<cr>
+    " " CtrlP scoped to various Rails directories
+    " autocmd User Rails map <Leader>c :CtrlP app/controllers/<cr>
+    " autocmd User Rails map <Leader>h :CtrlP app/helpers/<cr>
+    " autocmd User Rails map <Leader>j :CtrlP app/assets/javascripts/<cr>
+    " autocmd User Rails map <Leader>S :CtrlP app/assets/stylesheets/<cr>
+    " autocmd User Rails map <Leader>m :CtrlP app/models/<cr>
+    " autocmd User Rails map <Leader>u :CtrlP spec/models/<cr>
+    " autocmd User Rails map <Leader>v :CtrlP app/views/<cr>
 
 " janko-m/vim-test
     let test#strategy = "dispatch"
