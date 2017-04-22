@@ -1,4 +1,5 @@
 Plug 'airblade/vim-gitgutter'
+Plug 'AndrewRadev/deleft.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'bling/vim-airline'
