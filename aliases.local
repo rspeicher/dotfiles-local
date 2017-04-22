@@ -2,6 +2,7 @@
 #   find . -type f WRF echo $file; done
 alias -g WRF="|while read file; do"
 alias -g FALL="DISABLE_SPRING=1"
+alias -g ES="ENABLE_SPRING=1"
 
 # git
 alias gb='git branch'
