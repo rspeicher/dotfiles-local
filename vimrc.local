@@ -102,6 +102,9 @@ augroup vimrcLocalEx
 
   " Autoindent Markdown and commit messages
   autocmd FileType markdown,gitcommit setlocal ai
+
+  " Folding is non-terrible in JSON files
+  autocmd FileType json setlocal foldmethod=syntax foldnestmax=99
 augroup END
 
 " Highlight repeated lines in a range
