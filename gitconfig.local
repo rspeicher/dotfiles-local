@@ -2,6 +2,7 @@
   ai = add -i
   bl = branch -v --sort authordate
   cp = cherry-pick
+  cpc = cherry-pick --continue
   cpm = cherry-pick -m 1
   dc = diff --cached
   dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
