@@ -1,4 +1,4 @@
-set guifont=Consolas:h16.00 " Font
+set guifont=Consolas:h17.00        " Font
 set guioptions-=R                  " Don't show right scrollbar
 set guioptions-=L                  " Don't show left scrollbar
 
