@@ -35,9 +35,6 @@ bind-key S source-file ~/.tmux.conf \; display-message "Config reloaded..."
 # https://github.com/chrishunt/dot-files/blob/master/.tmux.conf
 # -----------------------------------------------------------------------------
 
-# enable UTF-8 support in status bar
-set -g status-utf8 on
-
 # set refresh interval for status bar
 set -g status-interval 30
 
@@ -70,9 +67,9 @@ bind-key -n PPage copy-mode -u
 bind-key Escape copy-mode
 unbind-key p
 bind-key p paste-buffer
-bind-key -t vi-copy 'v' begin-selection
-bind-key -t vi-copy 'V' rectangle-toggle
-bind-key -t vi-copy 'y' copy-pipe "pbcopy"
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy V rectangle-toggle
+bind-key -t vi-copy y copy-pipe "safe-reattach-to-user-namespace pbcopy"
 
 # Experimental
 # -----------------------------------------------------------------------------
