@@ -49,6 +49,9 @@ let @w = ':%s/\v\s+$//g'
 " Quick macro to (S)queeze whitespace on the current line
 let @s = ':s/\v\s+/ /g'
 
+" Copy current path to clipboard
+map <Leader>cp :let @* = expand("%")<CR>
+
 " Use Shift+P while in visual mode to replace the selection without overwriting
 " the default register
 vmap P p :call setreg('"', getreg('0')) <CR>
