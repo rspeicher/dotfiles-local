@@ -1,6 +1,5 @@
 " Remove default plugins from thoughtbot/dotfiles
 UnPlug "ctrlp.vim"
-UnPlug "syntastic"
 UnPlug "tComment"
 
 Plug 'airblade/vim-gitgutter'
@@ -32,7 +31,6 @@ Plug 'tpope/vim-rake'
 Plug 'tpope/vim-unimpaired'
 Plug 'tsigo/vim-dependencywtf'
 Plug 'vim-scripts/ReplaceWithRegister'
-Plug 'w0rp/ale'
 Plug 'yegappan/greplace'
 
 " Language support
