@@ -19,6 +19,7 @@
   ri = rebase -i
   stat = show --stat
   sub = submodule
+  wt = worktree
 
   j = stash
   jl = stash list
