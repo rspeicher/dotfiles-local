@@ -11,4 +11,12 @@ if defined?(Pry)
       _pry_.config.pager = nil
     end
   end
+
+  Pry::Commands.create_command 'ras' do
+    description "Require ActiveSupport"
+
+    def process
+      require 'active_support/all'
+    end
+  end
 end
