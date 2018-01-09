@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [[ $# -gt 0 ]]
+then
+  git log --reverse --format="### %H - %s%n%n%b" "$@"
+else
+  git log --reverse --format="### %H - %s%n%n%b" HEAD...master
+fi
