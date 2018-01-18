@@ -8,3 +8,6 @@ export GOPATH=$HOME/Code/go
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export HOMEBREW_NO_ANALYTICS=1
+
+# https://blog.phusion.nl/2017/10/13/why-ruby-app-servers-break-on-macos-high-sierra-and-what-can-be-done-about-it/
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
