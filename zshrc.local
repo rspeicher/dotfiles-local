@@ -19,6 +19,25 @@ zstyle ':completion:*' list-colors ''
 # vi mode
 bindkey jk vi-cmd-mode
 
+# fzf-git
+join-lines() {
+  local item
+  while read item; do
+    echo -n "${(q)item} "
+  done
+}
+
+bind-git-helper() {
+  local char
+  for c in $@; do
+    eval "fzf-g$c-widget() { local result=\$(fzf-g$c | join-lines); zle reset-prompt; LBUFFER+=\$result }"
+    eval "zle -N fzf-g$c-widget"
+    eval "bindkey '^g^$c' fzf-g$c-widget"
+  done
+}
+bind-git-helper f b t r h
+unset -f bind-git-helper
+
 # Host-specific local configs (e.g., ~/.zshrc.laptop.local)
 for f in ~/.zshrc.*.local; do source "$f"; done
 
