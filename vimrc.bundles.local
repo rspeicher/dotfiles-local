@@ -16,8 +16,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-user'
 Plug 'lervag/file-line'
+Plug 'mileszs/ack.vim'
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'SirVer/ultisnips'
@@ -116,8 +116,10 @@ endif
 " AndrewRadev/switch.vim
     nnoremap - :Switch<cr>
 
-" rking/ag.vim
-    let g:ag_prg="ag --vimgrep --nogroup --nocolor"
+" mileszs/ack.vim
+    if executable('ag')
+      let g:ackprg = 'ag --vimgrep'
+    endif
 
 " scrooloose/nerdtree
     " let g:NERDTreeIgnore      = ['\.rbc$', '\~$', '.DS_Store$']
