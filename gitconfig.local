@@ -53,3 +53,5 @@
   name = Robert Speicher
   email = rspeicher@gmail.com
   signingkey = BE807A72
+[merge "ours"]
+  driver = true
