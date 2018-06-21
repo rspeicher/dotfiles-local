@@ -131,6 +131,9 @@ endif
       \':./bin/rspec': ''
     \}
 
+" tpope/vim-markdown
+    let g:markdown_fenced_languages = ['html', 'vim', 'ruby', 'erb=eruby', 'diff', 'python', 'bash=sh']
+
 " tpope/vim-ragtag
     augroup ragtagCustom
       autocmd BufRead,BufNewFile *.jsx call RagtagInit()
