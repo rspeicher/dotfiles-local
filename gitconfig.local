@@ -17,6 +17,7 @@
   rc = rebase --continue
   rh = reset HEAD
   ri = rebase -i
+  ss = show --show-signature
   stat = show --stat
   sub = submodule
   wt = worktree
@@ -45,13 +46,11 @@
   newHighlight = green bold 22
 [grep]
   lineNumber = true
-[interactive]
-  diffFilter = diff-so-fancy
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
   name = Robert Speicher
   email = rspeicher@gmail.com
-  signingkey = BE807A72
+  signingkey = C3BDE68A117B4654142F017D1D812769A7706642
 [merge "ours"]
   driver = true
