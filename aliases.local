@@ -6,8 +6,8 @@ alias -g ES="ENABLE_SPRING=1"
 
 # git
 alias gb='git branch'
-alias gc='git commit -v -S'
-alias gca='gc --amend -S'
+alias gc='git commit -v'
+alias gca='gc --amend'
 alias gd='git diff'
 alias gi='git add -i'
 alias gp='git push'

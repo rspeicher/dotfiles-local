@@ -8,7 +8,7 @@
   dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
   fa = fetch --all
   fo = fetch origin
-  fixup = commit --amend --no-edit --gpg-sign
+  fixup = commit --amend --no-edit
   l = log --pretty=colored
   lc = log --format="%H" -1
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
