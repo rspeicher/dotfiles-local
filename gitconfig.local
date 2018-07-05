@@ -54,3 +54,5 @@
   signingkey = C3BDE68A117B4654142F017D1D812769A7706642
 [merge "ours"]
   driver = true
+[commit]
+  gpgsign = true
