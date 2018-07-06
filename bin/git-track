@@ -2,4 +2,9 @@
 
 set -e
 
-git checkout --track "$1"
+if [[ $# -eq 0 ]]
+then
+  git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
+else
+  git checkout --track "$1"
+fi
