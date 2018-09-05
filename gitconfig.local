@@ -12,6 +12,7 @@
   l = log --pretty=colored
   lc = log --format="%H" -1
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  logs = log --show-signature
   next-commit = !git checkout $(git log --reverse --ancestry-path --pretty=%H HEAD..master | head -1)
   nm = checkout --
   rc = rebase --continue
