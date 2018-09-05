@@ -85,6 +85,7 @@ augroup vimrcLocalEx
   autocmd! BufWritePost *vimrc,*vimrc.local source $MYVIMRC
   autocmd! BufWritePost *vimrc.bundles,*vimrc.bundles.local source $MYVIMRC
 
+  autocmd BufRead,BufNewFile Dangerfile set filetype=ruby
   autocmd BufRead,BufNewFile Procfile set filetype=yaml
   autocmd BufRead,BufNewFile CHANGELOG set fo-=t nowrap
 
