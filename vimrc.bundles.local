@@ -44,6 +44,8 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-markdown'
 
+Plug 'junegunn/vim-peekaboo'
+
 if has('mac')
   Plug 'rizzatti/dash.vim'
   nmap <silent> <Leader>* <Plug>DashSearch
