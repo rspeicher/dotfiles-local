@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+current = `git symbolic-ref --short HEAD`.strip
+target = current
+  .sub('-ee-', '-')
+  .sub(/-ee$/, '')
+
+`git fetch ce`
+`git merge ce/#{target} --no-ff`
