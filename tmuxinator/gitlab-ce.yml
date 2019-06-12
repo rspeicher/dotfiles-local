@@ -1,0 +1,14 @@
+name: GitLab CE
+root: ~/Code/gitlab/gdk-ce/gitlab-ce
+
+windows:
+  - server:
+    root: ..
+  - vim:
+      - vim
+  - shell:
+      - tmux set-window-option -t1 automatic-rename on
+      - tmux set-window-option -t3 automatic-rename on
+      - clear
+
+startup_window: shell

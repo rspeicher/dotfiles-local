@@ -1,0 +1,14 @@
+name: GitLab EE
+root: ~/Code/gitlab/gdk-ee/gitlab-ee
+
+windows:
+  - server:
+    root: ..
+  - vim:
+      - vim
+  - shell:
+      - tmux set-window-option -t1 automatic-rename on
+      - tmux set-window-option -t3 automatic-rename on
+      - clear
+
+startup_window: shell

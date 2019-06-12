@@ -1,0 +1,15 @@
+name: release-tools
+root: ~/Code/gitlab/release-tools
+
+windows:
+  - server:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim
+  - shell:
+      - tmux set-window-option -t1 automatic-rename on
+      - tmux set-window-option -t3 automatic-rename on
+      - clear
+
+startup_window: shell
