@@ -91,3 +91,5 @@ set -g @tpm_plugins '              \
 '
 
 run '~/.tmux/plugins/tpm/tpm'
+
+# vim:ft=tmux
