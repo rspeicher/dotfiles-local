@@ -60,6 +60,3 @@ cask 'font-droid-sans-mono'
 cask 'font-inconsolata'
 
 tap 'homebrew/dupes'
-
-tap 'homebrew/versions'
-brew 'phantomjs198'
