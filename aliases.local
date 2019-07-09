@@ -3,6 +3,7 @@
 alias -g WRF="|while read file; do"
 alias -g FALL="DISABLE_SPRING=1"
 alias -g ES="ENABLE_SPRING=1"
+alias -g CH="CHROME_HEADLESS=false"
 
 # git
 alias gb='git branch'
@@ -15,8 +16,16 @@ alias gpu='git push -u'
 alias gs='git status'
 alias dsf='diff-so-fancy'
 
+# gitlab
+alias ce='tmuxinator start -p ~/dotfiles-local/tmuxinator/gitlab-ce.yml'
+alias ee='tmuxinator start -p ~/dotfiles-local/tmuxinator/gitlab-ee.yml'
+alias rt='tmuxinator start -p ~/dotfiles-local/tmuxinator/release-tools.yml'
+
 # Bundler
 alias be="bundle exec"
+
+# RuboCop
+alias cop="bundle exec rubocop -P"
 
 # tmux
 alias t="tmux"
@@ -24,7 +33,7 @@ alias ta="tmux attach"
 alias tls="tmux list-sessions"
 
 # servers
-alias glutt='ssh tsigo@gluttony'
+alias glutt='ssh tsigo@gluttony.tsigo.org'
 alias pride='ssh tsigo@pride'
 alias sloth='ssh tsigo@sloth'
 alias tsigo='ssh tsigo@tsigo.com'
@@ -35,4 +44,4 @@ alias mp3fix="mp3check -rBe --cut-junk-start --cut-junk-end"
 alias psname="ps aux | grep -i"
 alias youtube-mp3="youtube-dl -t --no-mtime --extract-audio --audio-format mp3 --audio-quality 192"
 alias serve="python -m SimpleHTTPServer"
-alias redact="vim ~/.zhistory +"
+alias redact="vim $HISTFILE +"
