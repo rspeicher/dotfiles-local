@@ -19,9 +19,11 @@
   rc = rebase --continue
   rh = reset HEAD
   ri = rebase -i
+  rrr = rerere
   ss = show --show-signature
   stat = show --stat
   sub = submodule
+  sw = switch
   wt = worktree
 
   j = stash
