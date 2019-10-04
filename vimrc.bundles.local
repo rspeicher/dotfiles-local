@@ -166,6 +166,7 @@ endif
     let g:SuperTabCompleteCase = 'match'
 
 " tpope/fugitive
+    set tags^=./.git/tags
     autocmd QuickFixCmdPost *grep* cwindow
 
 " w0rp/ale
