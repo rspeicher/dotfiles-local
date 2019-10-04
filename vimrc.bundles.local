@@ -1,5 +1,4 @@
 " Remove default plugins from thoughtbot/dotfiles
-UnPlug "ctrlp.vim"
 UnPlug "tComment"
 
 Plug 'airblade/vim-gitgutter'
@@ -10,7 +9,6 @@ Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'endel/vim-github-colorscheme'
 Plug 'ervandew/supertab'
-Plug 'junegunn/fzf.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-indent'
@@ -69,6 +67,8 @@ endif
     augroup END
 
 " junegunn/fzf.vim
+    let $FZF_DEFAULT_COMMAND = 'rg --files --follow'
+
     nmap <c-p> :Files<CR>
     map <Leader>b :Buffers<CR>
     map <Leader>g :Tags<CR>
