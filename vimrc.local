@@ -107,6 +107,9 @@ augroup vimrcLocalEx
   " Autoindent Markdown and commit messages
   autocmd FileType markdown,gitcommit setlocal ai
 
+  " https://github.com/vim/vim/issues/2049#issuecomment-494923065
+  autocmd FileType markdown setlocal mmp=10000
+
   " Folding is non-terrible in JSON files
   autocmd FileType json setlocal foldmethod=syntax foldnestmax=99
 
