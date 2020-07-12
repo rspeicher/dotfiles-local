@@ -3,10 +3,8 @@ chronic
 cocaine
 foreman
 gitlab-development-kit
-httparty
-mina
+http
 pry
-taglib-ruby
+tmuxinator
 trollop
 unmac
-wriggle
