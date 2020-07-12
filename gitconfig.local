@@ -17,6 +17,7 @@
   next-commit = !git checkout $(git log --reverse --ancestry-path --pretty=%H HEAD..master | head -1)
   nm = checkout --
   rc = rebase --continue
+  re = rebase
   rh = reset HEAD
   ri = rebase -i
   rrr = rerere
