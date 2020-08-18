@@ -5,6 +5,10 @@ alias -g FALL="DISABLE_SPRING=1"
 alias -g ES="ENABLE_SPRING=1"
 alias -g CH="CHROME_HEADLESS=false"
 
+# Docker, Kubernetes
+alias d='docker'
+alias k='kubectl'
+
 # git
 alias gb='git branch'
 alias gc='git commit -v'
