@@ -9,3 +9,8 @@ endsnippet
 snippet pry
 require 'pry'; binding.pry
 endsnippet
+
+snippet glc
+require 'gitlab'
+client = Gitlab::Client.new(endpoint: 'https://gitlab.com/api/v4', private_token: ENV['GITLAB_TOKEN'])
+endsnippet
