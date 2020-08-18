@@ -5,6 +5,7 @@ foreman
 gitlab-development-kit
 http
 pry
+ripper-tags
 tmuxinator
 trollop
 unmac
