@@ -33,6 +33,8 @@ Plug 'yegappan/greplace'
 " Language support
 Plug 'cespare/vim-toml'
 Plug 'chase/vim-ansible-yaml'
+Plug 'google/vim-jsonnet'
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
 Plug 'Keithbsmiley/swift.vim'
 Plug 'mutewinter/nginx.vim'
 Plug 'mxw/vim-jsx'
@@ -49,6 +51,7 @@ Plug 'skbolton/embark'
 Plug 'tomasr/molokai'
 
 Plug 'junegunn/vim-peekaboo'
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
 
 if has('mac')
   Plug 'rizzatti/dash.vim'
