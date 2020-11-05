@@ -18,8 +18,16 @@ map <Leader>Vb :tabedit ~/.vimrc.bundles.local<CR>
 " FZF
 set rtp+=/usr/local/opt/fzf
 
-" The superior colorscheme
-colorscheme molokai
+" https://tomlankhorst.nl/iterm-tmux-vim-true-color/
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+colorscheme embark
+
+
+" Embark line numbers are too dark, ligten 'em up
+" LineNr term=underline ctermfg=236 guifg=#3E3859
+highlight LineNr guifg=#675d93
 
 " Even quicker window movement
 nmap H <c-w>h
