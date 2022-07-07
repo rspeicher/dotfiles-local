@@ -34,17 +34,6 @@
   js = !sh -c 'git stash show -v stash@{$1}' -
   ja = !sh -c 'git stash apply stash@{$1}' -
   jd = !sh -c 'git stash drop stash@{$1} && git stash list' -
-
-  ## GitLab-specific
-
-  pull-dev = "!f() { br=`git symbolic-ref --short HEAD`; git pull dev $br; }; f"
-  pdo  = !hub push dev,origin
-  pdog = !hub push dev,origin,github
-
-  # Check out the latest `X-Y-stable` branch
-  stab   = "!f() { br=`git branch --list [0-9]*-[0-9]*-stable | tail -1 | tr -d ' ' | sed 's/*//'`; git checkout $br && git pull --ff-only; }; f"
-  # Check out the latest `X-Y-stable-ee` branch
-  stabee = "!f() { br=`git branch --list [0-9]*-[0-9]*-stable-ee | tail -1 | tr -d ' ' | sed 's/*//'`; git checkout $br && git pull --ff-only; }; f"
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
