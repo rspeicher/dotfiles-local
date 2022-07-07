@@ -123,6 +123,15 @@ augroup vimrcLocalEx
 
   " Add frozen string literal directive to all Ruby files
   autocmd BufNewFile *.rb 0r ~/.vim/templates/ruby.rb
+
+  " Elixir: type ctrl+return to start a new line with |>
+  " NOTE: Requires custom iTerm2 mapping
+  " https://blog.semanticart.com/2018/11/12/an-iterm2-shortcut-for-a-little-productivity-boost/
+  autocmd FileType elixir inoremap <buffer> <F12> \|><space>
+  autocmd FileType elixir nnoremap <buffer> <F12> o\|><space>
+  " Elixir: type ctrl+\ to add an inline |>
+  autocmd FileType elixir inoremap <buffer> <C-\> \|>
+  autocmd FileType elixir nnoremap <buffer> <C-\> A<space>\|><space>
 augroup END
 
 " Highlight repeated lines in a range
