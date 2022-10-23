@@ -1,19 +1,11 @@
-# Ignore default keybinds
-no-input-default-bindings
+save-position-on-quit     # save play state
+no-input-default-bindings # ignore default keybinds
+no-native-fs              # native macOS fullscreen is slow
 
 volume=50
 
-osd-scale-by-window = no
-osd-font-size = 100
+osd-scale-by-window=no
+osd-font-size=100
 
 # Start centered
 geometry=50%:50%
-
-# Pretend to be a browser for network streams
-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
-
-# Use 8MB cache for streams, 32MB for local
-cache-default = 8192
-cache = 32768
-
-no-native-fs
