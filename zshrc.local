@@ -43,4 +43,6 @@ for f in ~/.zshrc.*.local; do source "$f"; done
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export MANPAGER='nvim +Man!'
+
 # vim: ft=sh
