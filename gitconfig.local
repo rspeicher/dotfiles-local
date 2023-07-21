@@ -1,6 +1,7 @@
 [alias]
   ai = add -i
   bl = branch -v --sort authordate
+  pick = cherry-pick
   cp = cherry-pick
   cpc = cherry-pick --continue
   cpm = cherry-pick -m 1
@@ -45,8 +46,8 @@
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
   name = Robert Speicher
-  email = rspeicher@gmail.com
-  signingkey = C3BDE68A117B4654142F017D1D812769A7706642
+  email = me@rspeicher.com
+  signingkey = 16631C68B57CACE5356880A063B906B26668C6F2
 [merge "ours"]
   driver = true
 [commit]
