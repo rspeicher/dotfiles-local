@@ -1,8 +1,5 @@
 byebug
-chronic
-cocaine
 http
 pry
-ripper-tags
+rails
 tmuxinator
-trollop
