@@ -43,6 +43,10 @@ for f in ~/.zshrc.*.local; do source "$f"; done
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+fi
+
 export MANPAGER='nvim +Man!'
 
 # vim: ft=sh
