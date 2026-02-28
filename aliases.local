@@ -37,12 +37,6 @@ alias t="tmux"
 alias ta="tmux attach"
 alias tls="tmux list-sessions"
 
-# servers
-alias glutt='ssh tsigo@gluttony.tsigo.org'
-alias pride='ssh tsigo@pride'
-alias sloth='ssh tsigo@sloth'
-alias tsigo='ssh tsigo@tsigo.com'
-
 # Convenience
 alias mm="musicmover"
 alias mp3fix="mp3check -rBe --cut-junk-start --cut-junk-end"

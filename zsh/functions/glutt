@@ -1,0 +1,7 @@
+glutt() {
+  if [[ "$1" == "." ]]; then
+    ssh -t tsigo@gluttony.tsigo.org "cd docker/${PWD:t} && exec \$SHELL -l"
+  else
+    ssh tsigo@gluttony.tsigo.org "$@"
+  fi
+}
