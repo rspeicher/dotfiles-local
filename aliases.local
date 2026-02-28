@@ -21,11 +21,6 @@ alias gpu='git push -u'
 alias gs='git status'
 alias dsf='diff-so-fancy'
 
-# gitlab
-alias ce='tmuxinator start -p ~/dotfiles-local/tmuxinator/gitlab-ce.yml'
-alias ee='tmuxinator start -p ~/dotfiles-local/tmuxinator/gitlab-ee.yml'
-alias rt='tmuxinator start -p ~/dotfiles-local/tmuxinator/release-tools.yml'
-
 # Bundler
 alias be="bundle exec"
 
@@ -38,11 +33,11 @@ alias ta="tmux attach"
 alias tls="tmux list-sessions"
 
 # Convenience
-alias mm="musicmover"
 alias mp3fix="mp3check -rBe --cut-junk-start --cut-junk-end"
 alias psname="ps aux | grep -i"
-alias youtube-mp3="youtube-dl -t --no-mtime --extract-audio --audio-format mp3 --audio-quality 192"
 alias serve="python3 -m http.server"
 alias redact="vim $HISTFILE +"
 
+alias co="cd ~/Code/rspeicher"
+alias icat=chafa
 alias nv="nvim -u ~/.config/nvim/init.lua"
